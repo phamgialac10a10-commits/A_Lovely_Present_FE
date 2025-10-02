@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import styles from './HappyBirthday.module.css';
 import HeartRain from "./HeartRain";
+import music from '../assets/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3';
+import img from '../assets/are-you-ready.jpg';
 
 function HappyBirthday() {
   const [showPopup, setShowPopup] = useState(true);
@@ -54,7 +56,7 @@ function HappyBirthday() {
       {showPopup ? (
         <div className={styles.popUp}>
           <div className={styles.popUpContainer}>
-            <img src="src/assets/are-you-ready.jpg" alt="img" width="200" height="200" />
+            <img src={img} alt="img" width="200" height="200" />
             <h2>Are you ready for a surprise? 🎉</h2>
             <button onClick={handleOk}>OK</button>
           </div>
@@ -86,7 +88,7 @@ function HappyBirthday() {
           </div>
         </div>
       )}
-       <audio ref={audioRef} src="src/assets/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3" preload="auto"></audio>
+       <audio ref={audioRef} src={music} preload="auto"></audio>
     </div>
   );
 }
