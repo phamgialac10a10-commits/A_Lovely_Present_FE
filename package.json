@@ -2,7 +2,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://username.github.io/A_Lovely_Present_FE",
+  "homepage": "https://LacPham.github.io/A_Lovely_Present_FE",
   "type": "module",
   "scripts": {
     "dev": "vite",
