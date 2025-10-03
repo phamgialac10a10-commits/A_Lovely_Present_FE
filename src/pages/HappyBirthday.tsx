@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import styles from './HappyBirthday.module.css';
 import HeartRain from "./HeartRain";
-import music from '../assets/Khuc Hát Mừng Sinh Nhật.mp3';
+import music from '../assets/snvv.mp3';
 import img from '../assets/279784830_1198571910947739_1741301630912849831_n.jpg';
 
 function HappyBirthday() {
