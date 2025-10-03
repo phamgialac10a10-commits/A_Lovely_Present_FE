@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import styles from './HappyBirthday.module.css';
 import HeartRain from "./HeartRain";
 import music from '../assets/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3';
-import img from '../assets/are-you-ready.jpg';
+import img from '../assets/Anh.png';
 
 function HappyBirthday() {
   const [showPopup, setShowPopup] = useState(true);
@@ -87,7 +87,7 @@ function HappyBirthday() {
           <div id="message" ref={messageRef} className={styles.messageContainer}>
             <div className={`${styles.message} ${showMessage ? styles.show : ""}`}>
               <h1>A special message for you</h1>
-              <p>I Love You 💖</p>
+              <p>I Like You 💖</p>
             </div>
           </div>
         </div>
