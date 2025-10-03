@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import styles from './HappyBirthday.module.css';
 import HeartRain from "./HeartRain";
 import music from '../assets/Khuc Hát Mừng Sinh Nhật.mp3';
-import img from '../assets/Anh.png';
+import img from '../assets/279784830_1198571910947739_1741301630912849831_n.jpg';
 
 function HappyBirthday() {
   const [showPopup, setShowPopup] = useState(true);
@@ -14,12 +14,6 @@ function HappyBirthday() {
   const handleOk = () => {
     setShowPopup(false);
     setCountdown(3);
-
-    // if (audioRef.current) {
-    //   audioRef.current.play().catch(err => {
-    //     console.log("Autoplay bị chặn:", err);
-    //   });
-    // }
   }
 
   useEffect(() => {
