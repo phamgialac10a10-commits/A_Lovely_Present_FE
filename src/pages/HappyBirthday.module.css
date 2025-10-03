@@ -13,20 +13,30 @@
 }
 
 .popUpContainer {
-    background: rgba(234, 2, 255, 0.774);
-    padding: 40px 50px;
-    border-radius: 15px;
-    text-align: center;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    height: 85%;
-    width: 90%;
-    max-width: 50%;
-    max-height: 65%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.popUpContainer {
+  padding: 40px 50px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 85%;
+  width: 90%;
+  max-width: 50%;
+  max-height: 65%;
+  background: rgba(234, 2, 255, 0.774);
     box-shadow: rgba(255, 3, 221, 0.3) 0px 54px 55px, rgba(255, 3, 221, 0.3) 0px -12px 30px, rgba(255, 3, 221, 0.3) 0px 4px 6px, rgba(255, 3, 221, 0.3) 0px 12px 13px, rgba(255, 3, 221, 0.3) 0px -3px 5px;
     animation: fadeIn 0.3s ease-in-out;
 }
@@ -339,5 +349,15 @@
     height: 15px;
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
+  }
+}
+
+
+@keyframes floatBalloons {
+  0% {
+    background-position: 0 100%, 50% 100%, 100% 100%;
+  }
+  100% {
+    background-position: 0 0, 50% 0, 100% 0;
   }
 }

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import styles from './HappyBirthday.module.css';
 import HeartRain from "./HeartRain";
-import music from '../assets/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3';
+import music from '../assets/Khuc Hát Mừng Sinh Nhật.mp3';
 import img from '../assets/Anh.png';
 
 function HappyBirthday() {
@@ -15,11 +15,11 @@ function HappyBirthday() {
     setShowPopup(false);
     setCountdown(3);
 
-    if (audioRef.current) {
-      audioRef.current.play().catch(err => {
-        console.log("Autoplay bị chặn:", err);
-      });
-    }
+    // if (audioRef.current) {
+    //   audioRef.current.play().catch(err => {
+    //     console.log("Autoplay bị chặn:", err);
+    //   });
+    // }
   }
 
   useEffect(() => {
@@ -27,7 +27,18 @@ function HappyBirthday() {
     if (countdown !== null && countdown > 0) {
       timer = setTimeout(() => setCountdown(countdown - 1), 1000);
     }
-    return () => clearTimeout(timer);
+
+    if (countdown == 0) {
+      if (audioRef.current) {
+      audioRef.current.play().catch(err => {
+        console.log("Autoplay bị chặn:", err);
+      });
+    }
+    }
+
+    return () => {
+      clearTimeout(timer)
+    };
   }, [countdown]);
 
   // 👇 theo dõi khi user scroll tới messageContainer
