@@ -35,9 +35,11 @@ function HappyBirthday() {
     const handleScroll = () => {
       if (messageRef.current) {
         const rect = messageRef.current.getBoundingClientRect();
-        // Kiểm tra xem message có nằm trong viewport không
+
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
           setShowMessage(true);
+        } else {
+          setShowMessage(false);
         }
       }
     };
@@ -75,12 +77,14 @@ function HappyBirthday() {
             <p>Wishing that you will...</p>
 
             <div className={styles.scrollIndicator}>
-              <span>Scroll down</span>
-              <div className={styles.arrow}></div>
+              <a href="#message">
+                <span>Scroll down</span>
+                <div className={styles.arrow}></div>
+              </a>
             </div>
           </div>
           {/* messageContainer có hiệu ứng reveal */}
-          <div ref={messageRef} className={styles.messageContainer}>
+          <div id="message" ref={messageRef} className={styles.messageContainer}>
             <div className={`${styles.message} ${showMessage ? styles.show : ""}`}>
               <h1>A special message for you</h1>
               <p>I Love You 💖</p>
@@ -88,7 +92,7 @@ function HappyBirthday() {
           </div>
         </div>
       )}
-       <audio ref={audioRef} src={music} preload="auto"></audio>
+      <audio ref={audioRef} src={music} preload="auto"></audio>
     </div>
   );
 }
