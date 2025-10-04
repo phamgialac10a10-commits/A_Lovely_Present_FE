@@ -64,7 +64,7 @@ function HappyBirthday() {
         <div className={styles.popUp}>
           <div className={styles.popUpContainer}>
             <img src={img} alt="img" width="200" height="200" />
-            <h2>Are you ready for a surprise? 🎉</h2>
+            <h2>Are you ready for a surprise?</h2>
             <button onClick={handleOk}>OK</button>
           </div>
         </div>
@@ -79,7 +79,7 @@ function HappyBirthday() {
           <HeartRain />
           <div className={styles.prolouge}>
             <h1>Happy Birthday, Beautiful!</h1>
-            <p>Wishing that you will...</p>
+            <p>Wishing you a new age full of joy, success in everything you wish for, and most importantly — always take good care of your health!</p>
 
             <div className={styles.scrollIndicator}>
               <a href="#message">
@@ -88,16 +88,23 @@ function HappyBirthday() {
               </a>
             </div>
           </div>
-          {/* messageContainer có hiệu ứng reveal */}
+
           <div id="message" ref={messageRef} className={styles.messageContainer}>
             <div className={`${styles.message} ${showMessage ? styles.show : ""}`}>
               <h1>A special message for you</h1>
-              <p>I Like You 💖</p>
+              <p><b>Peanut:</b>Today must be a really special day after all those stressful days.
+I still remember the days back in grade 12 — so innocent, so full of fun.
+Those times when we secretly used cheat sheets in Ms. Hiếu’s literature tests, or played caro during breaks — they’ve all become unforgettable memories.
+They’re something I still cherish deeply.
+And... there’s one thing I’ve never said before —
+I want to let that student from back then say it today:
+“I like you💖".
+             </p>
             </div>
           </div>
         </div>
       )}
-      <audio ref={audioRef} src={music} preload="auto"></audio>
+      <audio ref={audioRef} src={music} preload="auto" loop></audio>
     </div>
   );
 }
