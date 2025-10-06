@@ -92,13 +92,11 @@ function HappyBirthday() {
           <div id="message" ref={messageRef} className={styles.messageContainer}>
             <div className={`${styles.message} ${showMessage ? styles.show : ""}`}>
               <h1>A special message for you</h1>
-              <p><b>Peanut:</b>Today must be a really special day after all those stressful days.
+              <p><b>Peanut:</b>Today must be a really special day!
 I still remember the days back in grade 12 — so innocent, so full of fun.
 Those times when we secretly used cheat sheets in Ms. Hiếu’s literature tests, or played caro during breaks — they’ve all become unforgettable memories.
 They’re something I still cherish deeply.
-And... there’s one thing I’ve never said before —
-I want to let that student from back then say it today:
-“I like you💖".
+And... there’s one thing I’ve never said before, as a developer of VUS i want to say “I like you💖".
              </p>
             </div>
           </div>
