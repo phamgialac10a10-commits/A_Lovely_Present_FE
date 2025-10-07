@@ -92,7 +92,6 @@ function HappyBirthday() {
 
           <div id="message" ref={messageRef} className={styles.messageContainer}>
             <div className={`${styles.message} ${showMessage ? styles.show : ""}`}>
-              <img src={imgm} alt="img" width="50" height="50"/>
               <h1>A special message for you</h1>
               <p><b>Peanut:</b> Today must be a really special day!
 I still remember the days back in grade 12 — so innocent, so full of fun.
