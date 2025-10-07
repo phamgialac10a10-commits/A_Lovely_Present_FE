@@ -3,6 +3,7 @@ import styles from './HappyBirthday.module.css';
 import HeartRain from "./HeartRain";
 import music from '../assets/snvv.mp3';
 import img from '../assets/279784830_1198571910947739_1741301630912849831_n.jpg';
+import imgm from '../assets/279a3784afd830bbdc8c01659a6e7d2d.gif';
 
 function HappyBirthday() {
   const [showPopup, setShowPopup] = useState(true);
@@ -91,12 +92,13 @@ function HappyBirthday() {
 
           <div id="message" ref={messageRef} className={styles.messageContainer}>
             <div className={`${styles.message} ${showMessage ? styles.show : ""}`}>
+              <img src={imgm} alt="img" width="50" height="50"/>
               <h1>A special message for you</h1>
-              <p><b>Peanut:</b>Today must be a really special day!
+              <p><b>Peanut:</b> Today must be a really special day!
 I still remember the days back in grade 12 — so innocent, so full of fun.
 Those times when we secretly used cheat sheets in Ms. Hiếu’s literature tests, or played caro during breaks — they’ve all become unforgettable memories.
 They’re something I still cherish deeply.
-And... there’s one thing I’ve never said before, as a developer of VUS i want to say “I like you💖".
+And... there’s one thing I’ve never said before, i want to say “I like you💖". 
              </p>
             </div>
           </div>
