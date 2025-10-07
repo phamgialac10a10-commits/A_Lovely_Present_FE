@@ -3,7 +3,6 @@ import styles from './HappyBirthday.module.css';
 import HeartRain from "./HeartRain";
 import music from '../assets/snvv.mp3';
 import img from '../assets/279784830_1198571910947739_1741301630912849831_n.jpg';
-import imgm from '../assets/279a3784afd830bbdc8c01659a6e7d2d.gif';
 
 function HappyBirthday() {
   const [showPopup, setShowPopup] = useState(true);
