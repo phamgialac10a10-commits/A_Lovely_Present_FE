@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import styles from './HappyBirthday.module.css';
-import HeartRain from "./HeartRain";
+// import HeartRain from "./HeartRain";
 import music from '../assets/snvv.mp3';
 import img from '../assets/279784830_1198571910947739_1741301630912849831_n.jpg';
 
@@ -76,7 +76,7 @@ function HappyBirthday() {
         </div>
       ) : (
         <div className={styles.happyBirthdayContainer}>
-          <HeartRain />
+          {/* <HeartRain /> */}
           <div className={styles.prolouge}>
             <h1>Happy Birthday, Beautiful!</h1>
             <p>Wishing you a new age full of joy, success in everything you wish for, and most importantly — always take good care of your health!</p>
